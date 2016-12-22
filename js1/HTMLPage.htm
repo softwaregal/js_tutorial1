@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html5 PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+    <style type="text/css">
+        #Submit1
+        {
+            margin-bottom: 0px;
+        }
+    </style>
+<script language="javascript" type="text/javascript">
+// <!CDATA[
+     function sendMsg()
+     {
+        var name=document.getElementById("Text1").value;
+        var age=document.getElementById("Text2").value;
+        var date=document.getElementById("Text3").value;
+        var place_of_birth=document.getElementById("Text2").value;
+        console.log(name + "\n " + age + "\n " + date + "\n " + place_of_birth);
+     }
+// ]]>
+</script>
+</head>
+<body>
+    <p>
+      <input id="Text1" type="text" placeholder="name"/></p>
+    <p>
+      <input id="Text2" type="text" placeholder="age"/></p>
+    <p>
+      <input id="Text3" type="date" placeholder="date"/></p>
+    <p>
+      <input id="Text4" type="text" placeholder="place of birth"/></p>
+    <p>
+      <input id="Submit1" type="submit" onclick="sendMsg();" /></p>
+</body>
+</html>
